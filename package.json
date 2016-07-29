@@ -1,0 +1,30 @@
+{
+  "name": "@justinc/prompt-del",
+  "version": "1.0.0",
+  "description": "Delete by given patterns after prompting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin-calleja/prompt-del-dir.git"
+  },
+  "keywords": [],
+  "author": "Justin Calleja <calleja.justin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justin-calleja/prompt-del-dir/issues"
+  },
+  "homepage": "https://github.com/justin-calleja/prompt-del-dir#readme",
+  "dependencies": {
+    "@justinc/dir-exists": "^2.0.2",
+    "del": "^2.2.1",
+    "empty-dir": "^0.2.0",
+    "inquirer": "^1.1.2"
+  },
+  "devDependencies": {
+    "@justinc/eslint-config-base": "^1.0.0",
+    "eslint": "^2.8.0"
+  }
+}
