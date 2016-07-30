@@ -4,7 +4,7 @@
   "description": "Delete by given patterns after prompting",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +18,14 @@
   },
   "homepage": "https://github.com/justin-calleja/prompt-del-dir#readme",
   "dependencies": {
-    "@justinc/dir-exists": "^2.0.2",
     "del": "^2.2.1",
-    "empty-dir": "^0.2.0",
     "inquirer": "^1.1.2"
   },
   "devDependencies": {
+    "@justinc/dir-exists": "^2.0.2",
     "@justinc/eslint-config-base": "^1.0.0",
-    "eslint": "^2.8.0"
+    "chai": "^3.5.0",
+    "eslint": "^2.8.0",
+    "mocha": "^2.5.3"
   }
 }
