@@ -2,7 +2,7 @@ var del = require('del');
 var inquirer = require('inquirer');
 
 /**
- * All options accepted by exported function
+ * All arguments accepted by exported function
  * @typedef {Object} Args
  * @property {[string]} patterns      - Mandatory argument: array of patterns to base deletion on
  * @property {string} promptMsg       - Optional argument for the string to use to prompt the user with before deletion
@@ -53,12 +53,12 @@ function confirmFileDeletion(promptMsg) {
  * @param  {handleResultCallback} cb
  * @return {void}
  */
-module.exports = function _promptDelDir(args, cb) {
+module.exports = function _promptDel(args, cb) {
   cb = cb || (err => {
     if (err) throw err;
   });
   if (!args || !args.patterns) {
-    cb(new Error('the patterns ([string]) to delete by are mandatory'));
+    return cb(new Error('the patterns ([string]) to delete by are mandatory'));
   }
   const DEL_PATTERNS = args.patterns;
   const PROMPT_MSG = args.promptMsg || `About to delete based on the following patterns:\n${DEL_PATTERNS}`;
